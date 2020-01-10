@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>SSL login page</title>
+
+            <link href="favicon.ico" rel="shortcut icon">
+
+            <style>
+                body {
+                    font-size : 12px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-align: center;
+                }
+                .user_message {
+                    margin-right: auto;
+                    margin-left: auto;
+                    border: 1px solid #0087CD;
+                    background-repeat: no-repeat;
+                    width: 520px;
+                    height: 350px;
+                }
+                .title_image {
+                    width: 350px;
+                    margin-top: 10px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                .errorpanel {
+                    color: red;
+                    font-weight: bold;
+                }
+            </style>
+        
+    </head>
+    <body>
+            <div class="user_message" style="background-image: url('side.jpg');">
+                <div class="title_image">
+                    <img src="logo.gif">
+                </div>
+
+
+                <p class="errorpanel"></p>
+
+                <form accept-charset="utf-8" method="get" action="loggedin.html" name="LOGINFORM">
+
+
+
+                <br />
+                <div style="width: 420px; text-align: center; margin-left: auto; margin-right: auto;">
+                    <strong>Please login to provide access to the Web</strong>
+                </div>
+
+
+
+                <br />
+                <div style="width: 420px; text-align: center; margin-left: auto; margin-right: auto;">
+                    <strong>Closing this page will require you to re-authenticate.  To stay logged in, please leave this page open.</strong>
+                </div>
+
+
+
+
+                <br />
+                <div style="width: 420px; text-align: center; margin-left: auto; margin-right: auto;">
+
+                <table style="width: 100%; margin-left: auto; margin-right: auto;">
+                <tr>
+                <td style="width: 120px; text-align: right;"><strong>Username:</strong></td>
+                <td style="text-align: left;"><input style="width: 200px;" type="text" name="USERNAME" value="" size="15" maxlength="255"></td>
+                </tr>
+                <tr>
+                <td style="text-align: right;"><strong>Password:</strong></td>
+                <td style="text-align: left;"><input  style="width: 200px;" type="password" autocomplete="off" name="PASSWORD" size="15"></td>
+                </tr>
+                <tr>
+                <td colspan="2">
+                <input type="submit" name="ACTION" value="Login" class="gobutton">
+                </td>
+                </tr>
+                </table>
+                </div>
+
+
+
+
+                <script type="text/javascript">
+                <!--
+
+                    document.LOGINFORM.USERNAME.focus();
+
+                -->
+                </script>
+                </form>
+
+            </div>
+
+    </body>
+</html>
+
+
